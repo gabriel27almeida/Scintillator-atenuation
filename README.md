@@ -36,5 +36,5 @@ To use this code, first compile the C++ programs:
 
 To execute, use `./bin/run.exe` or `./bin/fit.exe`.
 
-The `run` program reads the `CONFIG` file and the `fit` program reads the `CONFIG-FIT` file. These files contain the relevant parameters of the simulation/fit.
+The `run` program reads the `CONFIG` file, while the `fit` program reads the files `CONFIG-FIT` and `DATA-FIT`. The CONFIG files contain the relevant parameters of the simulation/fit, while the data file contains the experimental data. Distances should come in $\mathrm{cm}$ and the atenuation coefficient in $\mathrm{cm}^{-1}$.
 
