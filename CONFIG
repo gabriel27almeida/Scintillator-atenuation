@@ -1,0 +1,15 @@
+# Physical parameters
+mu	0.5
+r 	0.8
+L 	2.9
+
+# Scan parameters
+xmin 	1.45
+xmax	1.45
+xstep	0.1
+ymin	0
+ymax	2.9
+ystep	0.1
+
+# Simulation parameters
+N0 10000
