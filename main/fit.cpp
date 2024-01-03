@@ -96,7 +96,7 @@ int main() {
             Simulator s(mu, r, variables["L"]);
             double chi2 = 0;
             for (int i=0; i<x_exp.size(); i++){
-                double ratio = s.run(x_exp[i], y_exp[i], (int)variables["N0"]);
+                double ratio = s.run(x_exp[i], y_exp[i], (int)variables["N0"],(bool)variables["diffusion"]);
                 chi2 += (ratio - intensity_exp[i])*(ratio - intensity_exp[i]);
             }
         

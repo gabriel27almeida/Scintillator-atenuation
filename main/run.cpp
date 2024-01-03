@@ -56,7 +56,7 @@ int main() {
 	Simulator s(variables["mu"], variables["r"], variables["L"]);
 	for (double x=variables["xmin"]; x<= variables["xmax"]; x+= variables["xstep"]){
 		for(double y=variables["ymin"]; y<=variables["ymax"]; y+= variables["ystep"]){
-			double ratio = s.run(x,y, (int)variables["N0"]);
+			double ratio = s.run(x,y, (int)variables["N0"],(bool)variables["diffusion"]);
 			outFile << x << " " << y << " " << ratio << endl;
 		}
 	}
