@@ -12,8 +12,6 @@ class Simulator{
 
 	private:
 		double mu, r, L;
-
-
 };
 
 

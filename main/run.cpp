@@ -9,6 +9,7 @@
 using namespace std;
 
 int main() {
+    srand(7);
 	map<string, double> variables;
 
     // Open the input and output file

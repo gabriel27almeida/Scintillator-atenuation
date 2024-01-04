@@ -11,7 +11,6 @@ Simulator::Simulator(double mu_, double r_, double L_){
 	mu = mu_;
 	r = r_,
 	L = L_;
-	srand (1);
 }
 
 double Simulator::run(double x0, double y0, int N0, bool diffuse){
@@ -29,7 +28,7 @@ double Simulator::run(double x0, double y0, int N0, bool diffuse){
 			if (y==0) break;
 			else n_r++;
 		}
-		double prob = exp(-mu*dist)*pow(1-r,n_r);
+		double prob = exp(-mu*dist)*pow(r,n_r);
 		double p = (double)rand()/RAND_MAX; // random (0,1)
 		if (p < prob) N++;
 	}
